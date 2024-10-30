@@ -1,0 +1,211 @@
+tr[data-gateway_id="morkva-monopay-payparts"]{
+	display: none !important;
+}
+#wpbody-content .woocommerce #mainform > p:not(.submit){ 
+	display: none;
+}
+#wpbody-content .woocommerce #mainform > table.form-table{
+	background-color: #fff;
+}
+#wpbody-content .woocommerce #mainform > table.form-table th{
+	padding-left: 20px;
+}
+#wpbody-content .woocommerce #mainform > table.form-table td{
+	padding-right: 20px;
+	padding-bottom: 30px;	
+}
+#woocommerce_morkva-monopay_mono_acquiring_title,
+#woocommerce_morkva-monopay_mono_checkout_title{
+	font-size: 24px;
+}
+#wpbody-content .woocommerce #mainform > table.form-table input[type="checkbox"]{
+	display: none;
+}
+td label{
+	position: relative;
+	padding-left: 40px;
+}
+td label input[type="checkbox"] + span:before{
+	content: '';
+	background-color: #ccc;
+	transition: .4s;
+    border-radius: 34px;
+    display: block;
+    height: 15px;
+    width: 28px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+td label[for="woocommerce_morkva-monopay_mono_delivery_methods"] input{
+	display: none !important;
+}
+td label input[type="checkbox"] + span:after{
+	content: '';
+	position: absolute;
+    transition: .4s;
+    border-radius: 50%;
+    left: 2px;
+    top: 4px;
+    background-color: white;
+    width: 11px;
+    height: 11px;
+}
+td label input[type="checkbox"]:checked + span:before{
+	background-color: #000;
+}
+td label input[type="checkbox"]:checked + span:after{
+	left: 15px;
+}
+label[for="woocommerce_morkva-monopay_checkout_button_type_black"] span:before,
+label[for="woocommerce_morkva-monopay_monopay_image_type_white"] span:before{
+	top: 31px !important;
+	width: 15px !important;
+}
+
+label[for="woocommerce_morkva-monopay_monopay_image_type_black"] span:before,
+label[for="woocommerce_morkva-monopay_checkout_button_type_white"] span:before{
+	top: 31px !important;
+	width: 15px !important;
+}
+label[for="woocommerce_morkva-monopay_checkout_button_type_white"] p{
+    background-color: #0000009e;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+label[for="woocommerce_morkva-monopay_checkout_button_type_black"] p{
+	padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    padding-bottom: 0px;
+}
+label[for="woocommerce_morkva-monopay_checkout_button_type_black"] input:checked + span:after,
+label[for="woocommerce_morkva-monopay_checkout_button_type_white"] input:checked + span:after{
+	top: 33px !important;
+    left: 2px !important;
+}
+label[for="woocommerce_morkva-monopay_monopay_image_type_black"] input:checked + span:after,
+label[for="woocommerce_morkva-monopay_monopay_image_type_white"] input:checked + span:after{
+	top: 33px !important;
+    left: 2px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_monopay_image_type_black"]{
+	margin-top: -23px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_monopay_image_type_white"]{
+    margin-top: -30px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_checkout_button_type_black"]{
+	margin-top: -23px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_checkout_button_type_white"]{
+    margin-top: -30px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_display_mode_minicart"] {
+	margin-top: -75px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_display_mode_cartmain"]{
+	margin-top: -138px !important;
+}
+.form-table td fieldset label[for="woocommerce_morkva-monopay_display_mode_checkout"]{
+	margin-top: -194px !important;
+}
+.plugin-development span {
+    margin-bottom: 6px;
+    font-size: 16px;
+    display: block;
+    font-weight: 500;
+}
+.plugin-development img {
+    height: 27px;
+}
+#woocommerce_morkva-monopay_mono_checkout_logo_morkva,
+#woocommerce_morkva-monopay-payparts_mono_checkout_logo_morkva{
+	background-color: #fff;
+	padding: 15px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#wpbody-content .woocommerce #mainform > p.submit .woocommerce-save-button{
+    background: #000;
+    border-color: #000;
+    padding: 7px 40px;
+    font-weight: 600;
+}
+#wpbody-content .woocommerce #mainform > p.submit .woocommerce-save-button:hover{
+	opacity: .7;
+}
+#woocommerce_morkva-monopay_description{
+	max-width: 400px;
+}
+#woocommerce_morkva-monopay-payparts_mono_payparts_title + .form-table{
+    cursor: no-drop;
+}
+#woocommerce_morkva-monopay_mono_checkout_title + .form-table label b,
+#woocommerce_morkva-monopay-payparts_mono_payparts_title + .form-table label b,
+#woocommerce_morkva-monopay-payparts_mono_payparts_title + .form-table label a,
+#woocommerce_morkva-monopay_mono_checkout_title + .form-table label b a{
+    display: block;
+    color: red;
+}
+#woocommerce_morkva-monopay-payparts_mono_payparts_title + .form-table fieldset{
+	opacity: .5;
+	position: relative;
+}
+#woocommerce_morkva-monopay-payparts_mono_payparts_title + .form-table fieldset:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	z-index: 1;
+}
+.mono-pro-version-btn{
+    background: #000;
+    border-color: #000;
+    padding: 15px 40px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: unset;
+}
+.mono-pro-version-btn:hover{
+	color: #fff !important;
+	opacity: .7;
+}
+.mono-pro-version-btn:focus{
+	box-shadow: unset !important;
+	color: #fff !important;
+	outline: unset !important;
+}
+label[for="woocommerce_morkva-monopay_mono_delivery_methods"],
+select[name="woocommerce_morkva-monopay_mono_delivery_methods_pickup"],
+select[name="woocommerce_morkva-monopay_mono_delivery_methods_courier"],
+select[name="woocommerce_morkva-monopay_mono_delivery_methods_np_box"],
+input[name="woocommerce_morkva-monopay_mono_payment_partparts_number"]{
+	opacity: .5;
+	position: relative;
+	cursor: no-drop;
+}
+label[for="woocommerce_morkva-monopay_mono_delivery_methods"]:before,
+select[name="woocommerce_morkva-monopay_mono_delivery_methods_pickup"]:before,
+select[name="woocommerce_morkva-monopay_mono_delivery_methods_courier"]:before,
+select[name="woocommerce_morkva-monopay_mono_delivery_methods_np_box"]:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	z-index: 1;
+	cursor: no-drop;
+}
